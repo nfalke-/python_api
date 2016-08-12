@@ -1,0 +1,723 @@
+[
+    {
+        "name": "get_blacklist_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/blacklist/list?endDateExclusive=None&filter=None&startDateInclusive=None", 
+                "kwargs": {
+                    "blacklist_filter": "None", 
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None", 
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_android_lookup", 
+        "tests": [
+            {
+                "args": [
+                    "url"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/mobile/android/lookup?url=url", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_landing_page_projects", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/projects", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_page_dom", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid/dom", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_blacklist_malware", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/blacklist/malware?confidence=None&endDateExclusive=None&filter=None&startDateInclusive=None", 
+                "kwargs": {
+                    "start": "None", 
+                    "blacklist_filter": "None", 
+                    "days": "1", 
+                    "confidence": "None", 
+                    "end": "None", 
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_project_keywords", 
+        "tests": [
+            {
+                "args": [
+                    1234
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/project/1234/keywords", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "_post", 
+        "tests": [
+            {
+                "args": [
+                    "endpoint", 
+                    "action", 
+                    "data", 
+                    "*url_args"
+                ], 
+                "kwargs": {
+                    "url_params": "**url_params"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_binary_data", 
+        "tests": [
+            {
+                "args": [
+                    "md5_hash"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/binary/data?md5=md5_hash", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_android", 
+        "tests": [
+            {
+                "args": [
+                    "package_name"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/mobile/android/package_name", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_binary_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/binary/list?client_workspace_only=None&endDateExclusive=None&startDateInclusive=None&virus_total_only=None", 
+                "kwargs": {
+                    "virus_total_only": "None", 
+                    "client_workspace_only": "None", 
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_blacklist_lookup_bulk", 
+        "tests": [
+            {
+                "args": [
+                    [
+                        "urls", 
+                        "urls", 
+                        "urls"
+                    ]
+                ], 
+                "expected_result": null, 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "_dump_requests", 
+        "tests": [
+            {
+                "args": [], 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_dns_data_by_name", 
+        "tests": [
+            {
+                "args": [
+                    "name"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/dns/name?maxResults=1000&name=name&rrType=None", 
+                "kwargs": {
+                    "rrtype": "None", 
+                    "maxresults": "1000"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "__init__", 
+        "tests": [
+            {
+                "args": [
+                    "token", 
+                    "key"
+                ], 
+                "kwargs": {
+                    "server": "'ws.riskiq.net'", 
+                    "version": "'v1'", 
+                    "http_proxy": "None", 
+                    "https_proxy": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_inventory", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/inventory/None", 
+                "kwargs": {
+                    "asset_id": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "_endpoint", 
+        "tests": [
+            {
+                "args": [
+                    "endpoint", 
+                    "action", 
+                    "*url_args"
+                ], 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_page_child_dom_text", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid", 
+                    "child_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid/child_guid/domText", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "__submit_landing_page_urls", 
+        "tests": [
+            {
+                "args": [
+                    "urls"
+                ], 
+                "kwargs": {
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "_json", 
+        "tests": [
+            {
+                "args": [
+                    "response"
+                ], 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_page_child_response", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid", 
+                    "child_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid/child_guid/response", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_affiliate_incident_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/affiliate/incident/list?endDateExclusive=None&knownProfile=None&maxResults=None&startDateInclusive=None", 
+                "kwargs": {
+                    "known_profile": "None", 
+                    "max_results": "None", 
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "submit_landing_page", 
+        "tests": [
+            {
+                "args": [
+                    "url"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/", 
+                "kwargs": {
+                    "keyword": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_project_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/project/list", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_blacklist_incident_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/blacklist/incident/list?all_workspace_crawls=None&endDateExclusive=None&startDateInclusive=None", 
+                "kwargs": {
+                    "timeout": "None", 
+                    "start": "None", 
+                    "days": "1", 
+                    "all_workspace_crawls": "None", 
+                    "end": "None", 
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "__get_blacklist_exploit_binary", 
+        "tests": [
+            {
+                "args": [], 
+                "kwargs": {
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None", 
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_blacklist_lookup", 
+        "tests": [
+            {
+                "args": [
+                    "url"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/blacklist/lookup?url=url", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_page_child_dom", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid", 
+                    "child_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid/child_guid/dom", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_proxy_ip", 
+        "tests": [
+            {
+                "args": [
+                    "ip"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/proxy/ip/ip", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_mobile_incident_list", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/mobile/incident/list?endDateExclusive=None&startDateInclusive=None", 
+                "kwargs": {
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "from_config", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": null, 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_landing_page_crawled", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/crawled?end=None&start=None&whois=None", 
+                "kwargs": {
+                    "whois": "None", 
+                    "start": "None", 
+                    "days": "None", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "_get", 
+        "tests": [
+            {
+                "args": [
+                    "endpoint", 
+                    "action", 
+                    "*url_args"
+                ], 
+                "kwargs": {
+                    "url_params": "**url_params"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_zlist_urls", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/zlist/urls?end=None&start=None", 
+                "kwargs": {
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "post_inventory_search", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/inventory/search", 
+                "kwargs": {
+                    "filter": "None", 
+                    "query": "None", 
+                    "filters": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "post_event_update", 
+        "tests": [
+            {
+                "args": [
+                    "ids"
+                ], 
+                "expected_result": null, 
+                "kwargs": {
+                    "reviewCode": "None", 
+                    "country": "None", 
+                    "owner": "None", 
+                    "note": "None", 
+                    "tags": "None", 
+                    "eventPriority": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "post_whois", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/whois/query", 
+                "kwargs": {
+                    "max_results": "100", 
+                    "name_server": "None", 
+                    "email": "None", 
+                    "domain": "None", 
+                    "raw": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_crawl_volume_daily_summary", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/crawlVolume/dailySummary?endDateInclusive=None&startDateInclusive=None", 
+                "kwargs": {
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_landing_page_flagged", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/flagged?end=None&start=None&whois=None", 
+                "kwargs": {
+                    "whois": "None", 
+                    "start": "None", 
+                    "days": "None", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_page_response", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid/response", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "_undump_requests", 
+        "tests": [
+            {
+                "args": [], 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_landing_page_malicious_binary", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/maliciousBinary?end=None&start=None&whois=None", 
+                "kwargs": {
+                    "whois": "None", 
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "post_event_search", 
+        "tests": [
+            {
+                "args": [
+                    "event_filter"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/event/search?count=50&offset=0", 
+                "kwargs": {
+                    "offset": "0", 
+                    "count": "50"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_landing_page", 
+        "tests": [
+            {
+                "args": [
+                    "md5_hash"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/md5_hash?whois=None", 
+                "kwargs": {
+                    "whois": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "submit_landing_page_bulk", 
+        "tests": [
+            {
+                "args": [
+                    "entries"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/landingPage/bulk", 
+                "kwargs": {
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_dns_ptr_by_ip", 
+        "tests": [
+            {
+                "args": [
+                    "ip"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/dns/name?ip=ip&maxResults=1000&rrType=None", 
+                "kwargs": {
+                    "rrtype": "None", 
+                    "maxresults": "1000"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_dns_data_by_ip", 
+        "tests": [
+            {
+                "args": [
+                    "ip"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/dns/data?ip=ip&maxResults=1000&rrType=None", 
+                "kwargs": {
+                    "rrtype": "None", 
+                    "maxresults": "1000"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_blacklist_incident", 
+        "tests": [
+            {
+                "args": [
+                    "url"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/blacklist/incident?maxResults=None&startIndex=None&url=url", 
+                "kwargs": {
+                    "max_results": "None", 
+                    "start_index": "None", 
+                    "kwargs": "**kwargs"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_mobile_incident", 
+        "tests": [
+            {
+                "args": [
+                    12345
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/mobile/incident/12345", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "get_page", 
+        "tests": [
+            {
+                "args": [
+                    "crawl_guid", 
+                    "page_guid"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/page/crawl_guid/page_guid", 
+                "kwargs": {}
+            }
+        ]
+    }, 
+    {
+        "name": "_landing_page_entry", 
+        "tests": [
+            {
+                "args": [], 
+                "kwargs": {
+                    "fields": null, 
+                    "url": "None", 
+                    "md5_hash": "None", 
+                    "project_name": "None", 
+                    "keyword": "None", 
+                    "pingback_url": "None"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_dns_data_by_data", 
+        "tests": [
+            {
+                "args": [
+                    "hostname"
+                ], 
+                "expected_result": "https://ws.riskiq.net/v1/dns/data?maxResults=1000&name=hostname&rrType=None", 
+                "kwargs": {
+                    "rrtype": "None", 
+                    "maxresults": "1000"
+                }
+            }
+        ]
+    }, 
+    {
+        "name": "get_affiliate_campaign_summary", 
+        "tests": [
+            {
+                "args": [], 
+                "expected_result": "https://ws.riskiq.net/v1/affiliate/campaignSummary?endDateExclusive=None&startDateInclusive=None", 
+                "kwargs": {
+                    "start": "None", 
+                    "days": "1", 
+                    "end": "None"
+                }
+            }
+        ]
+    }
+]
